@@ -10,10 +10,17 @@
 
 <div style="background-color:grey;color:white;padding:20px;">
 
-<h1 style = "text-align:center;">
+<h1 onmouseover="mOver(this)" onmouseout="mOut(this)" style = "text-align:center;">
     <font size = "300" face = "open sans">
         about JESSICA JIANG </font> </h1>
-
+<script>
+function mOver(obj) {
+    obj.innerHTML = "WELCOME!"
+}
+function mOut(obj) {
+    obj.innerHTML = "about JESSICA JIANG"
+}
+</script>
 </div>
 
 	
