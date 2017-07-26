@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US">
-	
+
+	<!-- Welcome Message -->	
 <script>
 function mymessage() {   
 	alert("Welcome to the webpage all about Jessica! I don't know why you want to learn about such a weird person but click 'ok' to continue. ^-^ ");}
@@ -9,11 +10,11 @@ function mymessage() {
 
 <body>
 <body style="background-color: white ;">
-		
+	<!-- audio -->		
 <audio autoplay loop> 
   <source src="bensound-sunny.mp3" type="audio/mpeg">
 	</audio>
-
+	<!-- Top Header-->
 <div style="background-color:grey;color:white;padding:20px;">
  <h1 style="text-align:center;">
 <font size = "300" face = "open sans">
@@ -23,16 +24,18 @@ function mymessage() {
 <p style="text-align:center;">
 <font size = "2" face = "scripting">
 "isn't it funny how day by day nothing changes but when you look back, everything is different..." ~ C.S. Lewis </font> </p>	
+
+	<!-- biography -->	
 <h2 style="text-align:center;">
     <font size = "5" face = "courier new">
-  biography </font> </h2>
-	
+  biography </font> </h2>	
 <p style="text-align:center;">
     <font size = "3" face = "courier new"> 
 	 <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="prof.JPG " align = "right" alt="weird girl" style="width:65.5px;height:117.5px; align:right;">
 	 I am a rising junior at Julia R. Masterman Laboratory and Demonstration School. My family moved to the United States in the mid 1990s from FuZhou, FuJian, China to New York then Philadelphia (where I was borned). I have always wanted to work in the STEM field but I am not quite sure which at the moment. At my high school, I am the stage manager for the annual musical (also, co-captain of stage crew). I am deeply involved with an international volunteer organization called <a href="https://www.yvc.org/">Youth Volunteer Corps</a> ; Currently, I am on my local advisory board and just recently been accepted into the International Youth Advisory Board (IYAB). Also, I am on my school's math team and badminton team. Occasionally, I edit <a href="https://www.youtube.com/channel/UC2q6SjP0M2JrTbkXbRq5sWQ">videos</a>  for fun. <br> P.S I am NOT a morning person and WILL NOT be awake before noon unless I REALLY have to be for whatever reason. ^-^ <br>
   <button class="button button1" onclick="displayFact()">Random Fact</button> </font> </p>
-
+	
+	<!-- fact button -->
 <style>
 .button {
     background-color: purple
@@ -47,33 +50,26 @@ function mymessage() {
 	margin: 4px 2px;
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
-    cursor: pointer;
-}
+    cursor: pointer;}
 .button1 {
     background-color: #f2f2f2; 
     color: black; 
-    border: 2px solid white;
-}
-.button1:hover {
-	background-color: purple
-		color: white;}
+    border: 2px solid white;}
 	</style>
-
+	
+	<!-- Profile Picture -->
 <script>
 function bigImg(x) {    x.style.height = "235px";
-    x.style.width = "131px";
-}
+    x.style.width = "131px";}
 function normalImg(x) {
     x.style.height = "117.5px";
-    x.style.width = "65.5px";
-}
+    x.style.width = "65.5px";}
 function displayFact() {
-    document.getElementById("demo").innerHTML = "FACT: I am the first in my family to be born in the United States of America."
-}
+    document.getElementById("demo").innerHTML = "FACT: I am the first in my family to be born in the United States of America."}
 </script>
-
 	<font size = "3" face = "courier new"> <p style="text-align:center;" id="demo"> </p> </font>
 
+	<!-- Likes/Dislikes -->
 <h2 style="text-align:center;">
     <font size = "5" face = "courier new"> likes </font> </h2>
     <p style="text-align:center;">
@@ -81,7 +77,6 @@ function displayFact() {
 	    - coffee and tea <br> - dark chocolate <br> - matcha <br> - bubble tea <br> - sleep <br> - baking <br> - reading <br> 
 	    - my friends (most of the time) <br>
         </font> </p>
-	
 <h2 style="text-align:center;">
     <font size = "5" face = "courier new">
          dislikes </font> </h2>
@@ -91,21 +86,20 @@ function displayFact() {
 		</font> </p>
  
 <white-space: normal;>
-
-<html>
-<head>
+	<!-- Screenshot Slideshow -->
+	
+<html> <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 * {box-sizing:border-box}
 body {font-family: Verdana,sans-serif;margin:0}
 .mySlides {display:none}
-
+	
 /* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
   position: relative;
-  margin: auto;
-}
+  margin: auto;}
 
 /* Next & previous buttons */
 .prev, .next {
@@ -119,19 +113,16 @@ body {font-family: Verdana,sans-serif;margin:0}
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-}
+  border-radius: 0 3px 3px 0; }
 
 /* Position the "next button" to the right */
 .next {
   right: 0;
-  border-radius: 3px 0 0 3px;
-}
+  border-radius: 3px 0 0 3px; }
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
+  background-color: rgba(0,0,0,0.8); }
 
 /* Caption text */
 .text {
@@ -141,8 +132,7 @@ body {font-family: Verdana,sans-serif;margin:0}
   position: absolute;
   bottom: 8px;
   width: 100%;
-  text-align: center;
-}
+  text-align: center; }
 
 /* Number text (1/3 etc) */
 .numbertext {
@@ -150,8 +140,7 @@ body {font-family: Verdana,sans-serif;margin:0}
   font-size: 12px;
   padding: 8px 12px;
   position: absolute;
-  top: 0;
-}
+  top: 0; }
 
 /* The dots/bullets/indicators */
 .dot {
@@ -162,37 +151,30 @@ body {font-family: Verdana,sans-serif;margin:0}
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
-  transition: background-color 0.6s ease;
-}
+  transition: background-color 0.6s ease; }
 
 .active, .dot:hover {
-  background-color: #717171;
-}
+  background-color: #717171; }
 
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
   animation-name: fade;
-  animation-duration: 1.5s;
-}
+  animation-duration: 1.5s; }
 
 @-webkit-keyframes fade {
   from {opacity: .4} 
-  to {opacity: 1}
-}
+  to {opacity: 1} }
 
 @keyframes fade {
   from {opacity: .4} 
-  to {opacity: 1}
-}
+  to {opacity: 1} }
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 11px}
-}
-</style>
-</head>
+  .prev, .next,.text {font-size: 11px} }
+</style> </head>
 <body>
 
 <div class="slideshow-container">
@@ -259,7 +241,7 @@ function showSlides(n) {
 </body>
 </html> 
 
-	
+	<!-- projects -->
 <h2 style="text-align:center;">
     <font size = "5" face = "courier new">
          recent projects </font> </h2>
